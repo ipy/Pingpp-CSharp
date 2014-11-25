@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc", "Pingpp-CSharp\mvc.csproj", "{8E403259-C7A4-4066-A924-678382583C5A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pingpp.Lib", "Pingpp.Lib\Pingpp.Lib.csproj", "{B8359D4C-A3DF-459F-A735-B5B9C0D556DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pingpp.Mvc", "Pingpp.Mvc\Pingpp.Mvc.csproj", "{A8573A98-E01D-44EE-80E9-73E562E95121}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pingpp.Lib.Test", "Pingpp.Lib.Test\Pingpp.Lib.Test.csproj", "{355DE4CD-1FFD-44B9-98EB-AE53467EB019}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E403259-C7A4-4066-A924-678382583C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E403259-C7A4-4066-A924-678382583C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E403259-C7A4-4066-A924-678382583C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E403259-C7A4-4066-A924-678382583C5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8359D4C-A3DF-459F-A735-B5B9C0D556DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8359D4C-A3DF-459F-A735-B5B9C0D556DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8359D4C-A3DF-459F-A735-B5B9C0D556DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8359D4C-A3DF-459F-A735-B5B9C0D556DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8573A98-E01D-44EE-80E9-73E562E95121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8573A98-E01D-44EE-80E9-73E562E95121}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8573A98-E01D-44EE-80E9-73E562E95121}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8573A98-E01D-44EE-80E9-73E562E95121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355DE4CD-1FFD-44B9-98EB-AE53467EB019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355DE4CD-1FFD-44B9-98EB-AE53467EB019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355DE4CD-1FFD-44B9-98EB-AE53467EB019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355DE4CD-1FFD-44B9-98EB-AE53467EB019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
