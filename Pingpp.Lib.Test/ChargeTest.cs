@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Pingpp.Lib.Business;
+using Pingpp.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Configuration;
 using System.ComponentModel.DataAnnotations;
@@ -31,7 +31,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void CreateChargeTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var charge = pingpp.CreateCharge(new ChargeCreateParam()
             {
@@ -52,7 +52,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void ListChargeTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var charges = pingpp.ListCharge(new ChargeListParam(), out error);
             Assert.IsNotNull(charges);
@@ -62,7 +62,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void RetrieveChargeTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var charge = pingpp.RetrieveCharge(new ChargeRetrieveParam()
             {

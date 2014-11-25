@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Pingpp.Lib;
 using Pingpp.Lib.Entity;
 using Pingpp.Lib.Param;
 using System;
@@ -32,7 +33,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void CreateRefundTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var refund = pingpp.CreateRefund(new RefundCreateParam()
             {
@@ -47,7 +48,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void ListRefundTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var refunds = pingpp.ListRefund(new RefundListParam()
             {
@@ -60,7 +61,7 @@ namespace Pingpp.Lib.Test
         [TestMethod]
         public void RetrieveRefundTest()
         {
-            var pingpp = new Pingpp.Lib.Business.Pingpp(KEY);
+            var pingpp = new Pingpp(KEY);
             Error error;
             var refund = pingpp.RetrieveRefund(new RefundRetrieveParam()
             {

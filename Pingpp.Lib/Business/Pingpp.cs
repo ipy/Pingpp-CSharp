@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Pingpp.Lib.Business
+namespace Pingpp.Lib
 {
     public class Pingpp
     {
