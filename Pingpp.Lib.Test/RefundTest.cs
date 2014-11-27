@@ -37,8 +37,8 @@ namespace Pingpp.Lib.Test
             Error error;
             var refund = pingpp.CreateRefund(new RefundCreateParam()
             {
-                Id = "ch_O888e1ynnTS4anPejL8KurDC",
-                Amount = 2,
+                Id = "ch_O888e1ynnTS4anPejL8KurDC", // 退款的支付账单 ID
+                Amount = 1,
                 Description = "没啥可说的",
             }, out error);
             Assert.IsNotNull(refund);
@@ -52,7 +52,7 @@ namespace Pingpp.Lib.Test
             Error error;
             var refunds = pingpp.ListRefund(new RefundListParam()
             {
-                Id = "ch_O888e1ynnTS4anPejL8KurDC",
+                Id = "ch_O888e1ynnTS4anPejL8KurDC", // 退款的支付账单 ID
             }, out error);
             Assert.IsNotNull(refunds);
             Assert.IsNull(error);
@@ -65,7 +65,8 @@ namespace Pingpp.Lib.Test
             Error error;
             var refund = pingpp.RetrieveRefund(new RefundRetrieveParam()
             {
-                Id = "ch_O888e1ynnTS4anPejL8KurDC",
+                Id = "re_iXjf9GLuPKWTm58an5vfn1e5", // 退款 ID
+                Charge = "ch_O888e1ynnTS4anPejL8KurDC" // 退款的支付账单 ID
             }, out error);
             Assert.IsNotNull(refund);
             Assert.IsNull(error);
